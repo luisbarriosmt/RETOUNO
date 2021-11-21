@@ -29,7 +29,7 @@ public class Usuario {
     @Column(name = "user_password", nullable = false, length = 50)
     private String password;
 
-    public Usuario() {
+    public Usuario(String email2, String password2, String string) {
     }
     public Usuario(Long id, String email, String name, String password) {
         this.id = id;
@@ -37,6 +37,7 @@ public class Usuario {
         this.name = name;
         this.password = password;
     }
+
 
     public Long getId(){
         return id;
